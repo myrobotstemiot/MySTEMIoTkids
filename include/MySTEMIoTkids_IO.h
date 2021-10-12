@@ -15,10 +15,16 @@
 #define Relay_2 1
 #define RelayDC_3 2
 #define RelayDC_4 3
+/*
 #define USB_1 4
 #define USB_2 5
 #define USB_3 6
 #define USB_4 7
+*/
+#define USB_1 8
+#define USB_2 9
+#define USB_3 10
+#define USB_4 11
 
 int analog(int _pin){
 	if(_pin == 0)_pin = 32;
