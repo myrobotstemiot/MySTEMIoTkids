@@ -155,10 +155,10 @@ Blockly.Blocks['MySTEMIoTkids_servo2'] = {
                                               ["Relay_2", "1"],
                                               ["RelayDC_3", "2"],
                                               ["RelayDC_4", "3"],
-                                              ["USB_1", "4"],
-                                              ["USB_2", "5"],
-                                              ["USB_3", "6"],
-                                              ["USB_4", "7"]]), "pin");
+                                              ["USB_1", "8"],
+                                              ["USB_2", "9"],
+                                              ["USB_3", "10"],
+                                              ["USB_4", "11"]]), "pin");
       this.appendValueInput("status")
         .setCheck("Number")
         .appendField("status");
