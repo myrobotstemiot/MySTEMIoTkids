@@ -91,7 +91,7 @@ module.exports = {
 
 		 {
 			 xml:
-				  `<block type="RGB6_MySTEMIoTkids">
+				  `<block type="RGB3_MySTEMIoTkids">
                         <value name="status">
                             <shadow type="math_number">
                                 <field name="NUM">1</field>
@@ -102,7 +102,7 @@ module.exports = {
 
 		 {
 			 xml:
-				  `<block type="RGB7_MySTEMIoTkids">
+				  `<block type="RGB4_MySTEMIoTkids">
                         <value name="status">
                             <shadow type="math_number">
                                 <field name="NUM">1</field>
@@ -110,6 +110,18 @@ module.exports = {
                         </value>
                     </block>`
 		 },
+
+		 {
+			 xml:
+				  `<block type="RGB5_MySTEMIoTkids">
+                        <value name="status">
+                            <shadow type="math_number">
+                                <field name="NUM">1</field>
+                            </shadow>
+                        </value>
+                    </block>`
+		 },
+
 
 		 {
 			 xml:

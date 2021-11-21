@@ -112,15 +112,15 @@ Blockly.Blocks['MySTEMIoTkids_servo2'] = {
     }
 
   };
-   Blockly.Blocks['RGB6_MySTEMIoTkids'] = {
+   Blockly.Blocks['RGB3_MySTEMIoTkids'] = {
     init: function() {
       this.appendDummyInput()
-        .appendField("RGB [A6] status  Red:")
-        .appendField(new Blockly.FieldDropdown([["ON","1"], ["OFF","0"]]), "r_status")
+        .appendField("RGB [A3] status  Red:")
+        .appendField(new Blockly.FieldDropdown([["OFF","0"], ["ON","1"]]), "r_status")
         .appendField("Green:")
-        .appendField(new Blockly.FieldDropdown([["ON","1"], ["OFF","0"]]), "g_status")
+        .appendField(new Blockly.FieldDropdown([["OFF","0"], ["ON","1"]]), "g_status")
         .appendField("Blue:")
-        .appendField(new Blockly.FieldDropdown([["ON","1"], ["OFF","0"]]), "b_status")
+        .appendField(new Blockly.FieldDropdown([["OFF","0"], ["ON","1"]]), "b_status")
 	  this.setInputsInline(true);
       this.setPreviousStatement(true, null);
       this.setNextStatement(true, null);
@@ -129,15 +129,32 @@ Blockly.Blocks['MySTEMIoTkids_servo2'] = {
     }
   };
 
-   Blockly.Blocks['RGB7_MySTEMIoTkids'] = {
+   Blockly.Blocks['RGB4_MySTEMIoTkids'] = {
     init: function() {
       this.appendDummyInput()
-        .appendField("RGB [A7] status  Red:")
-        .appendField(new Blockly.FieldDropdown([["ON","1"], ["OFF","0"]]), "rr_status")
+        .appendField("RGB [A4] status  Red:")
+        .appendField(new Blockly.FieldDropdown([["OFF","0"], ["ON","1"]]), "rr_status")
         .appendField("Green:")
-        .appendField(new Blockly.FieldDropdown([["ON","1"], ["OFF","0"]]), "gg_status")
+        .appendField(new Blockly.FieldDropdown([["OFF","0"], ["ON","1"]]), "gg_status")
         .appendField("Blue:")
-        .appendField(new Blockly.FieldDropdown([["ON","1"], ["OFF","0"]]), "bb_status")
+        .appendField(new Blockly.FieldDropdown([["OFF","0"], ["ON","1"]]), "bb_status")
+	  this.setInputsInline(true);
+      this.setPreviousStatement(true, null);
+      this.setNextStatement(true, null);
+      this.setColour(270);
+      this.setTooltip("");
+    }
+  };
+
+   Blockly.Blocks['RGB5_MySTEMIoTkids'] = {
+    init: function() {
+      this.appendDummyInput()
+        .appendField("RGB [A5] status  Red:")
+        .appendField(new Blockly.FieldDropdown([["OFF","0"], ["ON","1"]]), "rrr_status")
+        .appendField("Green:")
+        .appendField(new Blockly.FieldDropdown([["OFF","0"], ["ON","1"]]), "ggg_status")
+        .appendField("Blue:")
+        .appendField(new Blockly.FieldDropdown([["OFF","0"], ["ON","1"]]), "bbb_status")
 	  this.setInputsInline(true);
       this.setPreviousStatement(true, null);
       this.setNextStatement(true, null);
@@ -151,17 +168,17 @@ Blockly.Blocks['MySTEMIoTkids_servo2'] = {
       this.appendDummyInput()
         .appendField("Output CH")
         .appendField(new Blockly.FieldDropdown([
-                                              ["Relay_1", "0"],
-                                              ["Relay_2", "1"],
-                                              ["RelayDC_3", "2"],
-                                              ["RelayDC_4", "3"],
-                                              ["USB_1", "8"],
-                                              ["USB_2", "9"],
-                                              ["USB_3", "10"],
-                                              ["USB_4", "11"]]), "pin");
-      this.appendValueInput("status")
-        .setCheck("Number")
-        .appendField("status");
+                                              ["Relay1_12VDC", "0"],
+                                              ["Relay2_12VDC", "1"],
+                                              ["Relay3_12VDC", "2"],
+                                              ["Relay4_12VDC", "3"],
+                                              ["USB1_5VDC", "8"],
+                                              ["USB2_5VDC", "9"],
+                                              ["USB3_5VDC", "10"],
+                                              ["USB4_5VDC", "11"]]), "pin");
+       this.appendDummyInput()
+        .appendField("status")
+        .appendField(new Blockly.FieldDropdown([["OFF","0"], ["ON","1"]]), "status");
       this.setInputsInline(true);
       this.setPreviousStatement(true, null);
       this.setNextStatement(true, null);
