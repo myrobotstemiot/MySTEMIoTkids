@@ -11,20 +11,15 @@
 #define A10 16
 #define A11 17
 
-#define Relay_1 0     // MCP23XXX pin Relay is attached to
-#define Relay_2 1
-#define RelayDC_3 2
-#define RelayDC_4 3
-/*
-#define USB_1 4
-#define USB_2 5
-#define USB_3 6
-#define USB_4 7
-*/
-#define USB_1 8
-#define USB_2 9
-#define USB_3 10
-#define USB_4 11
+// MCP23XXX pin Relay is attached to
+#define Relay1_12VDC 0    
+#define Relay2_12VDC 1
+#define Relay3_12VDC 2
+#define Relay4_12VDC 3
+#define USB1_5VDC 8
+#define USB2_5VDC 9
+#define USB3_5VDC 10
+#define USB4_5VDC 11
 
 int analog(int _pin){
 	if(_pin == 0)_pin = 32;
